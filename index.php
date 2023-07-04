@@ -1,9 +1,10 @@
 <?php
     include __DIR__ . '/utilities/functions.php';
-    
+
+    // Isset Mehod is used to check if the passwordLength parameter is set.
     $passwordLength = isset($_GET['passwordLength']) ? intval($_GET['passwordLength']) : "";
     $generatedPassword = "";
-    
+
     if (!empty($passwordLength)) {
         $generatedPassword = generatePassword($passwordLength);
         if (empty($generatedPassword)) {
@@ -23,8 +24,8 @@
 </head>
 <body>
     <form method="GET" action="./index.php">
-        <label for="passwordLength">Password Length:</label>
-        <input type="number" name="passwordLength" id="passwordLength" min="1" max="100" value="10">
+        <label for="passwordLength">Password Length (max: 50):</label>
+        <input type="number" name="passwordLength" id="passwordLength" min="1" max="50" value="10">
         <button type="submit">Generate Password</button>
     </form>
 
