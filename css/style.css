@@ -1,0 +1,51 @@
+body {
+    background-color: #001632;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    color: #7d8896;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+main {
+    max-width: 900px;
+    width: 100%;
+}
+
+section {
+    background-color: white;
+    border-radius: 0.35rem;
+    height: 300px;
+}
+
+section > form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.buttons-form {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
