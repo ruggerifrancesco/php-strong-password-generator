@@ -43,8 +43,11 @@
 
         <section>
             <form method="GET" action="./index.php">
-                <label for="passwordLength">Lunghezza Password [max: 50]:</label>
-                <input type="number" name="passwordLength" id="passwordLength" min="1" max="50" value="10">
+                <label for="passwordLength">Lunghezza Password:</label>
+                <div class="input-group mt-3 mb-3">
+                    <span class="input-group-text">max: 50</span>
+                    <input type="number" class="form-control" name="passwordLength" id="passwordLength" min="4" max="50">
+                </div>
                 <div class="buttons-form">
                     <button type="submit" class="btn btn-primary">Generate Password</button>
                     <button type="submit" class="btn btn-secondary" name="clear" value="true">Clear</button>
